@@ -1,0 +1,31 @@
+{
+  "name": "ssr-demo",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=dev bun run src/index.ts",
+    "build:client": "vite build",
+    "start": "cross-env NODE_ENV=prod bun run src/index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.12",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "bun": "^1.1.25",
+    "cross-env": "^7.0.3",
+    "typescript": "^5.5.4",
+    "vite-tsconfig-paths": "^4.3.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vite": "^5.4.2"
+  }
+}
